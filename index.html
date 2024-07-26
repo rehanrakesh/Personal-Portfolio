@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">K Rehan Rakesh</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">K Rehan Rakesh</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="/picture.jpeg" alt="Rehan Rakesh profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Rehan Rakesh</h1>
+        <p class="section__text__p2">Web Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('/resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/rehanrakesh/'"
+          />
+          <img
+            src="/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/rehanrakesh'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="/picture 2.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p><b>6 Months</b> <br />Full Stack Web Developer Intern</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p> <b>2021-2024</b> <br>Bachelor of Computer Application</P>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Innovative and detail-oriented Full Stack Web Developer with a Bachelor of Computer Applications (BCA) degree and a strong foundation in web development technologies. Proficient in front-end and back-end development, with expertise in HTML, CSS, JavaScript, and frameworks such as React and Node.js. Experienced in designing and implementing responsive and user-friendly web applications. Demonstrated ability to collaborate effectively in team environments and deliver high-quality projects on time. Adept at problem-solving and continuously learning new technologies to enhance application functionality and performance.              
+            </p>
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+      <img
+        src="/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+    <br><br>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">Technical Skills</h2>
+            <br><br>
+            <div class="article-container">
+              <article>
+                <img
+                  src="/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React.js</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySql</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Soft Skills</h2>
+            <div class="article-container">
+              
+              <article>
+                <img src="/checkmark.png" alt="Experience icon" class="icon"/>
+                <div>
+                  <h3>Communication</h3>
+                </div>
+              </article>
+              <article>
+                <img src="/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Adaptability</h3>
+                </div>
+              </article>
+              <article>
+                <img src="/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Analytical Thinking</h3>
+                </div>
+              </article>
+              <article>
+                <img src="/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Team Collaboration</h3>
+                </div>
+              </article>
+              <article>
+                <img src="/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Problem solving</h3>
+                </div>
+              </article>
+              <article>
+                <img src="/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Time Management</h3>
+                </div>
+              </article>
+              <article>
+                <img src="/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Critical Thinking</h3>
+                </div>
+              </article>
+              <article>
+                <img src="/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Emotional Intelligence</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+      <img
+        src="/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+        </div>
+    </section>
+    <br><br><br>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="/Amazon clone Project.jpg"
+                alt="Amazon Clone"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Amazon Clone</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/rehanrakesh/Amazon-Clone-'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://rehanrakesh.github.io/Amazon-Clone-/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="Expense Tracker Project.jpg"
+                alt="Expense Tracker App"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Expense Tracker</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/rehanrakesh/Expense-calculator-'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://rehanrakesh.github.io/Expense-calculator-/main/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="ToDO list Project.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Todo List App</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/rehanrakesh/todo'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://rehanrakesh.github.io/todo/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="Calculator App Project.jpg"
+                alt="Calculator"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Calculator App</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/rehanrakesh/Calculator-App'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://rehanrakesh.github.io/Calculator-App/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br><br>
+      <img
+        src="/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <br><br><br>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">rehanrakeshk@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/rehanrakesh/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 K Rehan Rakesh. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
